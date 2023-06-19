@@ -1,5 +1,9 @@
 package modulo3.file.b3;
 
+import java.util.Scanner;
+
+import modulo3.file.b3.classi.Cellulare;
+
 /*
  * Esercizio 3.2 – Cellulare Testo:
     Progettare una classe di nome Cellulare, per rappresentare un telefono cellulare con contratto a
@@ -22,6 +26,93 @@ package modulo3.file.b3;
 
 public class Main {
     public static void main(String[] args) {
+        Cellulare cellulare = new Cellulare(0);
+        Scanner scan = new Scanner(System.in);
+        menu(cellulare,scan);
+        cellulare.ricarica(10);
+        cellulare.chiama(100);
+        cellulare.getNumeroChiamate();
+
+        System.out.println(cellulare.numero404());
         
+        scan.close();
+    }
+
+    static int controlInt(Scanner scan){
+        if(scan.hasNextInt()){
+            return scan.nextInt();
+        }else{
+            System.out.println("valore inserito non corretto, inserire nuovamente");
+            return controlInt(scan);
+        }
+    }
+
+    static double controlDouble(Scanner scan){
+        if(scan.hasNextDouble()){
+            return scan.nextDouble();
+        }else{
+            System.out.println("valore inserito non corretto, inserire nuovamente");
+            return controlDouble(scan);
+        }
+       
+    }
+
+    static void menu(Cellulare cellulare,Scanner scan){
+        System.out.println("menu \n"+
+                            "1. ricarica \n"+
+                            "2. chiama \n"+
+                            "3. guarda numero chiamate \n"+
+                            "4. azzera chiamate\n"+
+                            "5. guarda credito");
+                            
+        System.out.println("seleziona ora ");
+        switch (controlInt(scan)) {
+            case 1:
+                ricarica(cellulare,scan);
+                break;
+            case 2:
+                chiama(cellulare,scan);
+                break;
+            case 3:
+                chiamate(cellulare,scan);
+                break;
+            case 4:
+                azzeraChiamate(cellulare,scan);
+                break;
+            case 5:
+                credito(cellulare,scan);
+                break;
+            default:
+                System.out.println("numero non valido riprova");
+                menu(cellulare, scan);
+                break;
+        }
+    }
+
+    static void ricarica(Cellulare cellulare,Scanner scan){
+        System.out.println("inserire la ricarica");
+        cellulare.ricarica(controlDouble(scan));
+        menu(cellulare, scan);
+    }
+    
+    static void chiama(Cellulare cellulare,Scanner scan){
+        System.out.println("effettua chiamata per .. (minuti)");
+        cellulare.chiama(controlDouble(scan));
+        menu(cellulare, scan);
+    }
+
+    static void chiamate(Cellulare cellulare,Scanner scan){
+        System.out.println("sono state effettuate " +cellulare.getNumeroChiamate()+ " chiamate");
+        menu(cellulare, scan);
+    }
+
+    static void azzeraChiamate(Cellulare cellulare,Scanner scan){
+        cellulare.azzeraChiamate();
+        menu(cellulare, scan);
+    }
+
+    static void credito(Cellulare cellulare,Scanner scan){
+        System.out.println("il credito residuo è " +cellulare.numero404());
+        menu(cellulare, scan);
     }
 }
