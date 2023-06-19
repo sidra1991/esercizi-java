@@ -1,8 +1,7 @@
-package modulo3.file.b3;
 
 import java.util.Scanner;
 
-import modulo3.file.b3.classi.Cellulare;
+import modulo3.file.cellulare.classi.Cellulare;
 
 /*
  * Esercizio 3.2 – Cellulare Testo:
@@ -54,7 +53,6 @@ public class Main {
             System.out.println("valore inserito non corretto, inserire nuovamente");
             return controlDouble(scan);
         }
-       
     }
 
     static void menu(Cellulare cellulare,Scanner scan){

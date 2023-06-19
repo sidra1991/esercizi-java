@@ -1,4 +1,4 @@
-package modulo3.file.b3.classi;
+package modulo3.file.cellulare.classi;
 
 public class Cellulare {
     private double carica;

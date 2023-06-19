@@ -1,4 +1,4 @@
-package modulo3.file.a3.classi;
+package modulo3.file.banca.classi;
 
 public class Banca {
     private String nomeConto;

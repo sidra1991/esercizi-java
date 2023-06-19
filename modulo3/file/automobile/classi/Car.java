@@ -1,4 +1,4 @@
-package modulo3.file.c3.classi;
+package modulo3.file.automobile.classi;
 
 public class Car {
     private double fuelYield;
@@ -10,7 +10,14 @@ public class Car {
     }
 
     public void drive(double km){
-        this.gas -= this.fuelYield * km;
+        double calcolo = this.gas - (this.fuelYield * km);
+        
+        if(calcolo > 0){
+            System.out.println("viaggio riuscito");
+            this.gas = calcolo;
+        }else {
+            System.out.println("viaggio non possibile, poco carburante");
+        }
     }
 
     public void getGas(){
@@ -18,6 +25,7 @@ public class Car {
     }
 
     public void addGas(double gas){
+        System.out.println("rifornimento riuscito");
         this.gas += gas;
     }
 }

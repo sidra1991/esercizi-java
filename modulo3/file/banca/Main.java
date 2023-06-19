@@ -1,6 +1,6 @@
-package modulo3.file.a3;
+package modulo3.file.banca;
 
-import modulo3.file.a3.classi.Banca;
+import modulo3.file.banca.classi.Banca;
 
 /*
  * Esercizio 3.1 – BankAccount Testo:
@@ -14,6 +14,7 @@ import modulo3.file.a3.classi.Banca;
 
 public class Main {
     public static void main(String[] args) {
+        
         Banca harrysChecking = new Banca("harrysChecking",0,0);
 
         harrysChecking.versa(1000);
