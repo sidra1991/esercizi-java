@@ -1,6 +1,6 @@
-package esercizzi2.libroEsercizzi;
+package modulo2.libro;
 
-import esercizzi2.libroEsercizzi.classi.NumeroIntero;
+import modulo2.libro.classi.NumeroIntero;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,5 +1,5 @@
 
-package esercizzi2.fileEsercizzi;
+package modulo2.file;
 /*esercizio
  * CAPITOLO 2 - Utilizzare oggetti
 

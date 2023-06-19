@@ -1,4 +1,4 @@
-package esercizzi2.libroEsercizzi.classi;
+package modulo2.libro.classi;
 
 public class NumeroIntero {
     public int numeroIntero; 
