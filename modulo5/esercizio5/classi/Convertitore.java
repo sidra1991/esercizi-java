@@ -56,11 +56,6 @@ public class Convertitore {
         this.conversioneInString += this.centinaiaStringa(this.centinaia);
         this.conversioneInString += this.decineStringa(this.decine);
         this.conversioneInString += this.unitaInStringa(this.unita);
-        
-        
-       
-        
-        
         return this.conversioneInString;
     }
 

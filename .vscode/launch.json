@@ -1,0 +1,153 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "esempio.Main",
+            "projectName": "esercizi-java_9de2eac0"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "modulo1.Main",
+            "projectName": "esercizi-java_9de2eac0"
+        },
+        {
+            "type": "java",
+            "name": "Main(2)",
+            "request": "launch",
+            "mainClass": "modulo2.file.Main",
+            "projectName": "esercizi-java_9de2eac0"
+        },
+        {
+            "type": "java",
+            "name": "Main(3)",
+            "request": "launch",
+            "mainClass": "modulo2.libro.Main",
+            "projectName": "esercizi-java_9de2eac0"
+        },
+        {
+            "type": "java",
+            "name": "Main(4)",
+            "request": "launch",
+            "mainClass": "modulo3.file.automobile.Main",
+            "projectName": "esercizi-java_9de2eac0"
+        },
+        {
+            "type": "java",
+            "name": "Main(5)",
+            "request": "launch",
+            "mainClass": "modulo3.file.banca.Main",
+            "projectName": "esercizi-java_9de2eac0"
+        },
+        {
+            "type": "java",
+            "name": "Main(6)",
+            "request": "launch",
+            "mainClass": "modulo3.file.cellulare.Main",
+            "projectName": "esercizi-java_9de2eac0"
+        },
+        {
+            "type": "java",
+            "name": "Main(7)",
+            "request": "launch",
+            "mainClass": "modulo3.libro.a3.Main",
+            "projectName": "esercizi-java_9de2eac0"
+        },
+        {
+            "type": "java",
+            "name": "Main(8)",
+            "request": "launch",
+            "mainClass": "modulo4.esercizio1.Main",
+            "projectName": "esercizi-java_9de2eac0"
+        },
+        {
+            "type": "java",
+            "name": "Main(9)",
+            "request": "launch",
+            "mainClass": "modulo4.esercizio2e3.Main",
+            "projectName": "esercizi-java_9de2eac0"
+        },
+        {
+            "type": "java",
+            "name": "Main(10)",
+            "request": "launch",
+            "mainClass": "modulo5.esercizio1.Main",
+            "projectName": "esercizi-java_9de2eac0"
+        },
+        {
+            "type": "java",
+            "name": "Main(11)",
+            "request": "launch",
+            "mainClass": "modulo5.esercizio2.Main",
+            "projectName": "esercizi-java_9de2eac0"
+        },
+        {
+            "type": "java",
+            "name": "Main(12)",
+            "request": "launch",
+            "mainClass": "modulo5.esercizio3.Main",
+            "projectName": "esercizi-java_9de2eac0"
+        },
+        {
+            "type": "java",
+            "name": "Main(13)",
+            "request": "launch",
+            "mainClass": "modulo5.esercizio4.Main",
+            "projectName": "esercizi-java_9de2eac0"
+        },
+        {
+            "type": "java",
+            "name": "Main(14)",
+            "request": "launch",
+            "mainClass": "modulo5.esercizio5.Main",
+            "projectName": "esercizi-java_9de2eac0"
+        },
+        {
+            "type": "java",
+            "name": "Main(15)",
+            "request": "launch",
+            "mainClass": "modulo5.esercizio6.Main",
+            "projectName": "esercizi-java_9de2eac0"
+        }
+    ]
+}
